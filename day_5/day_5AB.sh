@@ -10,7 +10,7 @@ headline=$(head -1 "$INPUT")
 STACKS=$(((${#headline}+1)/4))
 
 
-echo -e "READING THE STACKS LAYOUT"
+echo -e "READING THE CRATES LAYOUT"
 IFS=''
 while read line; do
   echo -e "\nLine: $line"
@@ -46,7 +46,7 @@ for (( i=1; i<=STACKS; i++ )) do
   echo "Stack[$i]: ${stack[$i]}"
 done
 
-echo -e "\nPROCEEDING CRANE INSTRUCTIONS"
+echo -e "\nREADING AND EXECUTING INSTRUCTIONS FOR THE CRANE"
 instructioncounter=0
 while read line; do
   instructioncounter=$((instructioncounter+1))
