@@ -10,7 +10,7 @@ headline=$(head -1 "$INPUT")
 STACKS=$(((${#headline}+1)/4))
 
 
-echo -e "READING THE CRATES LAYOUT"
+echo -e "READING THE LAYOUT"
 IFS=''
 while read line; do
   echo -e "\nLine: $line"
